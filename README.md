@@ -1,16 +1,24 @@
-### Hi there 👋
+### Привет всем читающим 😉 
+Вы находитесь в Github профиле Frontend разработчика 👋
+Меня зовут Некрасов Степан и я рад что Вы посетили эту страницу! 😇
 
-<!--
-**javuscriptus/javuscriptus** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Я ищу работу, да-да 😅
+Если у Вас есть единоразовая или долгосрочная работа для меня - Вы можете на меня положится. 
+Мои знания не идеальны, но я ежедневно изучаю то новое, что можно применять в реальных проектах.
+Честно говоря у меня мало опыта и в некоторых местах могут быть пробелы в знаниях, но я стараюсь мгновенно их закрывать.
 
-Here are some ideas to get you started:
+Вот перечень технологий которые я пробовал или использую в разработке:
+* TypeScript, JavaScript (ES6+)
+* ReactJS
+* Redux, Redux toolkit
+* React Hook Form
+* ESLint
+* SCSS / CSS Modules
+* Pug
+* Material UI, Twitter Bootstrap, Ant Design
+* Webpack / Gulp
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+**Мои контакты:**
+Обо мне: [javuscriptus.github.io](https://javuscriptus.github.io/)
+Моя почта: [javus.scriptus911@gmail.com](email://javus.scriptus911@gmail.com)
+My Telegram: [t.me/JavusCriptus](https://t.me/JavusCriptus)
