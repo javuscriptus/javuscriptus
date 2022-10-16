@@ -18,6 +18,6 @@
 * Webpack / ViteJS
 
 **Мои контакты:**  
-Обо мне: [javuscriptus.github.io](https://javuscriptus.github.io/)  
+Мое портфолио: 
 Моя почта: [javus.scriptus911@gmail.com](email://javus.scriptus911@gmail.com)  
 My Telegram: [t.me/JavusCriptus](https://t.me/JavusCriptus)  
