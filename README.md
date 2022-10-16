@@ -16,7 +16,7 @@
 * SCSS / CSS Modules
 * Pug
 * Material UI, Twitter Bootstrap, Ant Design
-* Webpack / Gulp
+* Webpack / ViteJS
 
 **Мои контакты:**  
 Обо мне: [javuscriptus.github.io](https://javuscriptus.github.io/)  
