@@ -11,7 +11,7 @@
 * TypeScript, JavaScript (ES6+)
 * ReactJS
 * Redux, Redux toolkit, Redux-saga, Redux-persist, Zustand
-* React Hook Form
+* React Hook Form, React-select, react-router-dom
 * ESLint
 * SCSS / CSS Modules
 * Pug
