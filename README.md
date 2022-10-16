@@ -10,7 +10,7 @@
 Вот перечень технологий которые я пробовал или использую в разработке:
 * TypeScript, JavaScript (ES6+)
 * ReactJS
-* Redux, Redux toolkit, Redux-saga, Redux-persist
+* Redux, Redux toolkit, Redux-saga, Redux-persist, Zustand
 * React Hook Form
 * ESLint
 * SCSS / CSS Modules
