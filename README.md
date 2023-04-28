@@ -1,23 +1,75 @@
-### Привет всем читающим 😉  
-Вы находитесь в Github профиле Frontend разработчика 👋  
-Меня зовут Некрасов Степан и я рад что Вы посетили эту страницу! 😇  
+Hello, fellow explorers! 😉
+Welcome to the GitHub profile of a Frontend Developer 👋
+My name is Stepan Nekrasov, and I'm glad you stopped by this page! 😇
 
-~~Я ищу работу, да-да 😅~~
-~~Если у Вас есть единоразовая или долгосрочная работа для меня - Вы можете на меня положится.~~
-~~Мои знания не идеальны, но я ежедневно изучаю то новое, что можно применять в реальных проектах.~~
-~~Честно говоря у меня мало опыта и в некоторых местах могут быть пробелы в знаниях, но я стараюсь мгновенно их закрывать.~~
+## Skills
+### Core Skills
+- JavaScript
+- ReactJS
+- TypeScript
+- Redux
+- HTML5
+- CSS3
 
-Вот перечень технологий которые я пробовал или использую в разработке:
-* TypeScript, JavaScript (ES6+)
-* ReactJS
-* Redux, Redux toolkit, Redux-saga, Redux-persist, Zustand
-* React Hook Form, React-select, react-router-dom
-* ESLint / Prettier
-* SCSS / CSS Modules
-* Material UI, Twitter Bootstrap, Ant Design
-* Webpack / ViteJS
+### State Management
+- Redux Toolkit
+- RTK Query
+- Zustand
+- React Context
 
-**Мои контакты:**  
-Мое портфолио: 😇  
-Моя почта: [javus.scriptus911@gmail.com](email://javus.scriptus911@gmail.com)  
-My Telegram: [t.me/JavusCriptus](https://t.me/JavusCriptus)  
+### UI Libraries/Frameworks
+- Tailwind
+- Material-UI
+- AntD
+- Bootstrap
+
+### Styling
+- SCSS
+- CSS Modules
+- Adaptive Design
+- Pixel Perfect
+
+### Form & Data Handling
+- ZOD
+- React Hook Form
+- React Query
+- Axios
+
+### Mapping & Visualization
+- D3.js
+- Leaflet
+- Socket.IO
+- GraphQL
+
+### Communication
+- jsSIP
+- WebRTC
+- i18n
+- SSE
+
+### Build Tools
+- ViteJS
+- Webpack
+
+### Design Tools
+- Photoshop
+- Figma
+
+### Version Control
+- Git
+- GitLab
+
+### Collaboration & Leadership
+- Pair Programming
+- Code Reviews
+- Team Leader
+- Task Creation
+- Team Coordination
+
+Feel free to reach out and connect with me:
+
+My Portfolio: 😇
+Email: [javus.scriptus911@gmail.com](email://javus.scriptus911@gmail.com)
+Telegram: [t.me/JavusCriptus](https://t.me/JavusCriptus)
+
+Let's collaborate, improve, and build amazing things together in the world of frontend development. Excited to see you here!
