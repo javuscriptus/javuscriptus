@@ -66,9 +66,6 @@ My name is Stepan Nekrasov, and I'm a frontend developer passionate about coding
 - Task Creation
 - Team Coordination
 
-
-![coding gif](https://media.giphy.com/media/xTiTnfkt9ar8O2QbgA/giphy.gif)
-
 Feel free to get in touch and let's connect:
 
 Portfolio: ? 🌐
