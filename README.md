@@ -1,6 +1,6 @@
-Hello, fellow explorers! 😉
-Welcome to the GitHub profile of a Frontend Developer 👋
-My name is Stepan Nekrasov, and I'm glad you stopped by this page! 😇
+🌟 Hi there, welcome to my GitHub profile! 🌟
+
+My name is Stepan Nekrasov, and I'm a frontend developer passionate about coding and learning new technologies. 😊
 
 ## Skills
 ### Core Skills
@@ -66,10 +66,14 @@ My name is Stepan Nekrasov, and I'm glad you stopped by this page! 😇
 - Task Creation
 - Team Coordination
 
-Feel free to reach out and connect with me:
 
-My Portfolio: 😇
+![coding gif](https://media.giphy.com/media/xTiTnfkt9ar8O2QbgA/giphy.gif)
+
+Feel free to get in touch and let's connect:
+
+Portfolio: ? 🌐
 Email: [javus.scriptus911@gmail.com](email://javus.scriptus911@gmail.com)
 Telegram: [t.me/JavusCriptus](https://t.me/JavusCriptus)
 
-Let's collaborate, improve, and build amazing things together in the world of frontend development. Excited to see you here!
+I'm looking forward to collaborating and creating exciting projects together in the world of frontend development! See you around! 😄
+
