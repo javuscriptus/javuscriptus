@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000000; /* Black background as per the color palette */
+  color: white;
+  font-family: sans-serif;
+}
+
+/* Create a scrollable container */
+#root {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* Define the total scrollable height of the page */
+.scroll-container {
+  height: 400vh; /* 4 sections worth of scrolling */
+}
