@@ -7,14 +7,14 @@ import { gsap } from 'gsap';
 import workGlitchFragmentShader from '../shaders/workGlitch.glsl';
 import animationState from '../state';
 
-// Secret #27: Project names are anagrams of cyberpunk authors
+// Project placeholders; replace urls with real ones
 const mockProjects = [
-  { title: 'Project: Bogsin', url: '#' }, // Gibson
-  { title: 'Project: Ovimas', url: '#' }, // Asimov
-  { title: 'Project: Relack', url: '#' }, // Clarke
-  { title: 'Project: Kdic', url: '#' },   // Dick
-  { title: 'Project: Stingrel', url: '#' }, // Sterling
-  { title: 'Project: Step On Hens', url: '#' }, // Stephenson
+  { title: 'Neural Garments', url: '#' },
+  { title: 'Realtime WebGL', url: '#' },
+  { title: 'R3F DGX', url: '#' },
+  { title: 'Gen-Design Toolkit', url: '#' },
+  { title: 'Spatial UI', url: '#' },
+  { title: 'A/V Systems', url: '#' },
 ];
 
 const WorkGlitchMaterial = shaderMaterial(
@@ -30,20 +30,21 @@ const WorkGlitchMaterial = shaderMaterial(
 );
 extend({ WorkGlitchMaterial });
 
-
 const ProjectItem = ({ project, position }) => {
   const meshRef = useRef();
   const materialRef = useRef();
+  const textRef = useRef();
 
   useFrame((state, delta) => {
     if (materialRef.current) {
-        materialRef.current.uniforms.time.value += delta;
-        // Continuously update glitch from global state
-        materialRef.current.uniforms.glitchAmount.value = animationState.workSection.glitchAmount;
+      materialRef.current.uniforms.time.value += delta;
+      // Continuously update glitch from global state
+      materialRef.current.uniforms.glitchAmount.value =
+        animationState.workSection.glitchAmount;
     }
   });
 
-  const handlePointerMove = (e) => {
+  const handlePointerMove = e => {
     gsap.to(meshRef.current.position, {
       x: position[0] + (Math.random() - 0.5) * 2,
       y: position[1] + (Math.random() - 0.5) * 2,
@@ -54,7 +55,15 @@ const ProjectItem = ({ project, position }) => {
   };
 
   const handleClick = () => {
-    console.log(`Clicked on ${project.title}`);
+    // glitch pulse on click but keep link clickable
+    if (materialRef.current) {
+      gsap.fromTo(
+        materialRef.current.uniforms.glitchAmount,
+        { value: 0.6 },
+        { value: 0, duration: 0.6, ease: 'expo.out' }
+      );
+    }
+    if (project.url) window.open(project.url, '_blank');
   };
 
   return (
@@ -66,11 +75,13 @@ const ProjectItem = ({ project, position }) => {
         <planeGeometry args={[2, 1]} />
         <workGlitchMaterial ref={materialRef} />
         <Text
-          font="https://fonts.gstatic.com/s/orbitron/v25/yMJRMIlzdpvBhQQL_Qq7dy0.woff"
+          ref={textRef}
+          // Use default font to avoid remote fetch
+          font={undefined}
           fontSize={0.2}
-          color="white"
-          anchorX="center"
-          anchorY="middle"
+          color='white'
+          anchorX='center'
+          anchorY='middle'
         >
           {project.title}
         </Text>
@@ -89,8 +100,10 @@ const WorkSection = () => {
         const row = Math.floor(index / gridColumns);
         const col = index % gridColumns;
         const x = (col - (gridColumns - 1) / 2) * gridGap;
-        const y = (row * -1) * (gridGap - 1);
-        return <ProjectItem key={index} project={project} position={[x, y, 0]} />;
+        const y = row * -1 * (gridGap - 1);
+        return (
+          <ProjectItem key={index} project={project} position={[x, y, 0]} />
+        );
       })}
     </group>
   );

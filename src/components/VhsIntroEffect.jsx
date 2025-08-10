@@ -1,9 +1,9 @@
-import * as THREE from 'three'
-import { extend, useFrame } from '@react-three/fiber'
-import { shaderMaterial } from '@react-three/drei'
-import { useRef } from 'react'
+import * as THREE from 'three';
+import { extend, useFrame } from '@react-three/fiber';
+import { shaderMaterial } from '@react-three/drei';
+import { useRef } from 'react';
 
-import fragmentShader from '../shaders/introVhsEffect.glsl'
+import fragmentShader from '../shaders/introVhsEffect.glsl';
 
 const VhsMaterial = shaderMaterial(
   // Uniforms
@@ -38,7 +38,7 @@ const VhsIntroEffect = () => {
   });
 
   return (
-    <mesh>
+    <mesh position={[0, 0, -2]}>
       <planeGeometry args={[10, 10]} />
       <vhsMaterial ref={materialRef} />
     </mesh>

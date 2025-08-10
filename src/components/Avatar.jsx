@@ -1,9 +1,9 @@
-import * as THREE from 'three'
-import { extend, useFrame } from '@react-three/fiber'
-import { shaderMaterial } from '@react-three/drei'
-import { useRef, useState, useEffect } from 'react'
+import * as THREE from 'three';
+import { extend, useFrame } from '@react-three/fiber';
+import { shaderMaterial } from '@react-three/drei';
+import { useRef, useState, useEffect } from 'react';
 
-import fragmentShader from '../shaders/avatarShader.glsl'
+import fragmentShader from '../shaders/avatarShader.glsl';
 
 const AvatarMaterial = shaderMaterial(
   // Uniforms
@@ -28,6 +28,7 @@ extend({ AvatarMaterial });
 
 const Avatar = ({ avatarStyle, glitchAmount }) => {
   const materialRef = useRef();
+  const meshRef = useRef();
 
   useFrame((state, delta) => {
     if (materialRef.current) {
@@ -38,14 +39,14 @@ const Avatar = ({ avatarStyle, glitchAmount }) => {
   // Update uniforms when props change
   useEffect(() => {
     if (materialRef.current) {
-        materialRef.current.uniforms.avatarStyle.value = avatarStyle;
-        materialRef.current.uniforms.glitchAmount.value = glitchAmount;
+      materialRef.current.uniforms.avatarStyle.value = avatarStyle;
+      materialRef.current.uniforms.glitchAmount.value = glitchAmount;
     }
-  }, [avatarStyle, glitchAmount])
+  }, [avatarStyle, glitchAmount]);
 
   return (
-    <mesh position={[0, 0, -1]}>
-      <planeGeometry args={[4, 4]} />
+    <mesh ref={meshRef} position={[0, 0, -1]}>
+      <planeGeometry args={[3.2, 4.2]} />
       <avatarMaterial ref={materialRef} transparent={true} />
     </mesh>
   );

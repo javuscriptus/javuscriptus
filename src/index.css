@@ -17,5 +17,31 @@ body {
 
 /* Define the total scrollable height of the page */
 .scroll-container {
-  height: 400vh; /* 4 sections worth of scrolling */
+  height: 520vh; /* intro + 5 sections (20/40/60/80/95/100) + footer */
+}
+
+:root {
+  --color-bg: #000000;
+  --color-neon: #00ffff;
+  --color-ochre: #bf6a00;
+  --color-blood: #c1121f;
+  --color-steel: #2e2929;
+  --color-rot: #f2d027;
+}
+
+/* Typography fallbacks; local only to avoid remote fetch */
+.font-orbitron {
+  font-family: Orbitron, system-ui, sans-serif;
+}
+.font-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    'Liberation Mono', 'Fira Code', monospace;
+}
+
+/* Overlay UI basics */
+.ui-badge {
+  background: color-mix(in srgb, var(--color-neon) 15%, transparent);
+  border: 1px solid var(--color-neon);
+  color: var(--color-neon);
+  text-transform: uppercase;
 }

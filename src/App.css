@@ -1,1 +1,4 @@
-/* We will write our own styles */
+/* Scoped UI elements for Html overlays */
+.avatar-controls button:hover {
+  filter: brightness(1.2);
+}
